@@ -1,0 +1,10 @@
+INPUT_FOLDER_PATH = "/Users/ijeomandu/ml_projects/customer_service_chatbot/customer-support-data"
+MAX_CHARS = 3000
+OVERLAP = 300
+OLLAMA_EMBEDDING_MODEL = "mxbai-embed-large"
+OLLAMA_CHAT_MODEL = "llama3.2:latest"
+CHROMA_DB_PATH = "chroma_ollama_db_cx"
+COLLECTION_NAME = "customer-support-docs"
+COLLECTION_DESCRIPTION = "A collection of customer service documents" 
+#USER_QUERY = "What is a complex network?"
+NUM_RESULTS = 3 # num of close matches to return during similarity search 
