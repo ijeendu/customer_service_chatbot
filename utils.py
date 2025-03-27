@@ -226,3 +226,24 @@ def add_doc_embeddings_to_vectorstore(docs_embedding: dict, collection: chromadb
         logger.error(f"Error adding {base_file_name} to collection: {e}")
 
     return
+
+
+
+#retrieve chroma db
+def load_db_collection(chroma_db_path: str,
+                       db_collection_name: str,
+                       embed_model: str) -> chromadb.Collection:
+    
+    """ 
+     This function takes in a collection name and returns a chroma collection
+    """
+    try:
+        chroma_client = chromadb.PersistentClient(path=chroma_db_path)
+        research_collection = chroma_client.get_collection(
+            name=db_collection_name,
+            embedding_function=get_embeding_function(embed_model)
+            )
+    except Exception as e:
+        logger.error(f"Error connecting to chroma db: {e}")
+    
+    return research_collection
