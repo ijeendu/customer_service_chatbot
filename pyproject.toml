@@ -1,0 +1,16 @@
+[project]
+name = "customer-service-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=0.6.3",
+    "deepeval>=2.6.5",
+    "langfuse>=2.60.2",
+    "ollama>=0.4.7",
+    "openai>=1.68.2",
+    "pypdf2>=3.0.1",
+    "streamlit>=1.44.0",
+    "tdqm>=0.0.1",
+]
