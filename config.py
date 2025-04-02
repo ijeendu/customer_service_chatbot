@@ -6,5 +6,5 @@ OLLAMA_CHAT_MODEL = "llama3.2:latest"
 CHROMA_DB_PATH = "chroma_ollama_db_cx"
 COLLECTION_NAME = "customer-support-docs"
 COLLECTION_DESCRIPTION = "A collection of customer service documents" 
-#USER_QUERY = "What is a complex network?"
-NUM_RESULTS = 3 # num of close matches to return during similarity search 
+USER_QUERY = "How do I return an item?" # "How to Cancel an Order That’s Already Shipped?"
+NUM_RESULTS = 1 # num of close matches to return during similarity search 
